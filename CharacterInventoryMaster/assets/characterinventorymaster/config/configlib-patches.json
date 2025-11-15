@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "file": "CharacterInventoryMaster.json",
+  "settings": [
+    {
+      "code": "showYear",
+      "ingui": "Show Year",
+      "type": "boolean",
+      "comment": "Shows Year",
+      "default": true,
+      "weight": 1.0
+    },
+    {
+      "code": "showMonth",
+      "ingui": "Show Month",
+      "type": "boolean",
+      "comment": "Shows Month",
+      "default": true,
+      "weight": 2.0
+    },
+    {
+      "code": "showDay",
+      "ingui": "Show Day",
+      "type": "boolean",
+      "comment": "Shows Day",
+      "default": true,
+      "weight": 3.0
+    },
+    {
+      "code": "showTime",
+      "ingui": "Show Time",
+      "type": "boolean",
+      "comment": "Shows Time",
+      "default": true,
+      "weight": 4.0
+    },
+    {
+      "code": "useTemperatureDescriptors",
+      "ingui": "Use Temperature Descriptors",
+      "type": "boolean",
+      "comment": "Uses descriptors for temperature instead of direct values",
+      "default": false,
+      "weight": 9.0
+    },
+    {
+      "type": "separator",
+      "title": "Temperature Configurations",
+      "weight": 9.5,
+      "collapsible":  true
+    },
+    {
+      "code": "temperatureBreakpoints",
+      "ingui": "Temperature Breakpoints",
+      "type": "string",
+      "comment": "Comma-separated ( head/tail spaces removed ) list of temperature breakpoints across which to split temperature descriptors. Duplicates are ignored, order is ignored.",
+      "default": "-10, 0, 5, 15, 25, 30",
+      "weight": 10.0
+    },
+    {
+      "code": "temperatureDescriptors",
+      "ingui": "Temperature Descriptors",
+      "type": "string",
+      "comment": "Must have 1 more values than the breakpoints. Used for breakpoints above.  If provided less, will reuse the last descriptor. Please don't QA this i will not fix shit",
+      "default": "Biting cold, Very Cold, Cold, Freezing, Chilly, Comfortable, Warm, Sweltering" ,
+      "weight": 10.1
+    }
+  ]
+}

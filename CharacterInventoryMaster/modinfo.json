@@ -1,0 +1,14 @@
+{
+  "type": "code",
+  "name": "Character Inventory Master",
+  "modid": "characterinventorymaster",
+  "version": "1.1.0",
+  "description": "Character Inventory menu configuration",
+  "authors": [ "KnewOne" ],
+  "side": "Universal",
+  "requiredOnClient": true,
+  "requiredOnServer": false,
+  "dependencies": {
+    "survival": ""
+  }
+}
